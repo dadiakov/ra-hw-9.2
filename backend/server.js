@@ -20,6 +20,7 @@ router.get('/posts', async (ctx, next) => {
 
 router.post('/posts', async(ctx, next) => {
     const {id, content} = ctx.request.body;
+    console.log(id, content)
 
     if (id !== 0) {
         posts = posts.map(o => o.id !== id ? o : {...o, content: content});
