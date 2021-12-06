@@ -7,8 +7,6 @@ import CreatePost from './components/CreatePost';
 import ViewPost from './components/ViewPost';
 
 export default function App() {
-
-
   return (
     <React.Fragment>
       <Router>

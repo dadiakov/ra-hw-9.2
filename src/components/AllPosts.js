@@ -6,7 +6,6 @@ export default function AllPosts() {
     const [posts, setPosts] = useState([]);
     const [activeCard, setActiveCard] = useState('');
     const [activeUrl, setActiveUrl] = useState('');
-    
   
     const fetchData = async () => {
       const json = await fetch('http://localhost:7070/posts');
