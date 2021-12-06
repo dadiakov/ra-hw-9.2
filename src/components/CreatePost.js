@@ -24,9 +24,7 @@ export default function CreatePost() {
         },
         body: JSON.stringify({id: 0, content: inputValue})
       });
-      
       response.ok ? setLoaded(true) : console.log('Проблема');
-      
     }
     return (
       <React.Fragment>
@@ -37,6 +35,5 @@ export default function CreatePost() {
         <button style={{marginTop: 10}} onClick={onCloseHandler}>Закрыть</button>
         {loaded || close ? <Redirect to="/" /> : null} 
       </React.Fragment>
-      
     )
   }
